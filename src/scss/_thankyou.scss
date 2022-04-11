@@ -1,0 +1,165 @@
+.thank-you {
+    max-width: 875px;
+    width: 100%;
+    padding: 0 25px;
+    margin: 55px auto 0 auto;
+    @include for-tablet-landscape-down-835{
+        margin-top:15px;
+    }
+    .succes-box {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        h2 {
+            padding: 0;
+            margin: 0 0;
+            font-size: 48px;
+            text-transform: lowercase;
+            font-weight: 500;
+            @include for-tablet-landscape-down-835{
+                font-weight: 500;
+                font-size: 24px;
+                line-height: 36px;
+            }
+        }
+        p {
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 28px;
+            color: #979797;
+            @include for-tablet-landscape-down-835{
+                font-size: 14px;
+                line-height: 18px;
+                text-align: center;
+            }
+            a {
+                font-weight: 400;
+                color: #000;
+            }
+        }
+    }
+    .info-box {
+        height: 62px;
+        background: #ffffff;
+        box-shadow: 0px 0px 15px rgba(52, 58, 64, 0.2);
+        @include border-radius(8px);
+        margin-top: 10px;
+        display: flex;
+        padding: 11px 19px;
+        align-items: center;
+        justify-content: space-between;
+        @include for-tablet-landscape-down-835{
+            height: 132px;
+            flex-wrap: wrap;
+        }
+        .item {
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 18px;
+            color: #343a40;
+            @include for-tablet-landscape-down-835{
+                width: 50%;
+            }
+            p {
+                text-transform: lowercase;
+            }
+        }
+    }
+    .car-box-wrap {
+        .card-box-header {
+            height: 62px;
+        }
+        .card-box-body {
+            .cart-list-wrap {
+                height: 302px;
+                .cart-item {
+                    height: 60px;
+                    padding: 0 40px;
+                    @include for-tablet-landscape-down-835{
+                        padding: 0 20px;
+                    }
+                    .img-wrap {
+                        display: flex;
+                        align-items: center;
+                        span {
+                            font-weight: 500;
+                            font-size: 16px;
+                            @include for-tablet-landscape-down-835{
+                                font-size: 12px;
+                            }
+                        }
+                        img {
+                            margin-right: 15px;
+                        }
+                    }
+                    .img-desc {
+                        font-weight: 400;
+                        font-size: 16px;
+                        @include for-tablet-landscape-down-835{
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+            .total-bar {
+                height: 123px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                padding: 0;
+                border-top: 0;
+                .location {
+                    width: 100%;
+                    height: 50px;
+                    padding: 0 50px;
+                    display: flex;
+                    align-items: center;
+                    color: #979797;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 24px;
+                    border-bottom: 1px solid rgba(151, 151, 151, 0.2);
+                    @include for-tablet-landscape-down-835{
+                        font-size: 12px;
+                        line-height: 15px;
+                        padding: 0 20px;
+                    }
+                    img{
+                        margin-right:15px;
+                    }
+                }
+                .tot{
+                    display: flex;
+                    padding: 0 50px;
+                    width: 100%;
+                    align-items: center;
+                    flex-direction: row;
+                    height: 70px;
+                    justify-content: space-between;
+                    font-weight: 500;
+                    font-size: 24px;
+                    color: #343A40;
+                    @include for-tablet-landscape-down-835{
+                        font-size: 16px;
+                        line-height: 24px;
+                        padding: 0 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.hide-on-desktop{
+    display: none;
+}
+
+@include for-tablet-landscape-down-835{
+    .hide-on-mobile{
+        display: none;
+    }
+    .hide-on-desktop{
+        display: block;
+    }
+}

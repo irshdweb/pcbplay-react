@@ -1,0 +1,28 @@
+.right-tbl{
+    table{
+        margin-top: 16px;
+        padding: 0;
+        width: 100%;
+        thead{
+            th{
+                text-align: left;
+                font-weight: 600;
+                font-size: 12px;
+                line-height: 18px;
+                color: $secondaryColor;
+                border-bottom: 6px solid rgba(0, 132, 60, 0.2);
+                padding: 0;
+            } 
+        }
+        tbody{
+            tr{
+                td{
+                    height: 31px;
+                    border-bottom: 1px solid rgba(151, 151, 151, 0.2);
+                    font-size: 12px;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+}

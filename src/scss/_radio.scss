@@ -1,0 +1,23 @@
+input[type="radio"] {
+	appearance: none;
+	width: 24px;
+	height: 24px;
+	border: 2px solid #FF2E63;
+	border-radius: 50%;
+	background-clip: content-box;
+	padding: 3px;
+    cursor:pointer;
+    &:hover{
+        background: rgba(255, 46, 99, 0.2);
+        border: 2px solid #FF2E63;
+        box-sizing: border-box;
+        box-shadow: 0px 0px 0px 4px #FFEAEF;
+    }
+}
+
+input[type="radio"]:checked {
+	background-color: #FF2E63;
+    &:hover{
+        background: rgba(255, 46, 99, 0.2);
+    }
+}

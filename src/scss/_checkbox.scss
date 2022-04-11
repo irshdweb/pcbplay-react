@@ -1,0 +1,42 @@
+.check-wrap{
+    margin-top: 5px;
+    .checkbox + label {
+        width: 24px;
+        height: 24px;
+        border: 2px solid $primaryHover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @include border-radius(4px);
+        box-sizing: border-box;
+        cursor:pointer;
+        @include transition(all, 0.5s, ease-in-out);
+        &:hover{
+            background: $secondaryHover;
+            border: 2px solid $primaryHover;
+            box-sizing: border-box;
+            box-shadow: 0px 0px 0px 4px #FFEAEF;
+        }
+    }
+    
+    .checkbox{
+        display: none;
+        &:checked + label{
+            background: $primaryHover;
+            &:hover{
+                background: $secondaryHover;
+                border: 2px solid $primaryHover;
+                box-sizing: border-box;
+                box-shadow: 0px 0px 0px 4px #FFEAEF;
+                svg{
+                    fill: $primaryHover;
+                }
+            }
+            svg{
+                width: 15px;
+                fill: $white;
+            }
+        }
+    }
+}
+

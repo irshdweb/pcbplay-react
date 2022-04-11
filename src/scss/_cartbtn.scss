@@ -1,0 +1,67 @@
+.button-wrap{
+    width: 93px;
+    height: 41px;
+    background: #FFFFFF;
+    border: 1px solid rgba(52, 58, 64, 0.2);
+    @include border-radius(6px);
+    @include for-tablet-landscape-down{
+        width: 140px;
+        height: 41px;
+    }
+    display: flex;
+    .cart-number{
+        width: 42px;
+        height: 100%;
+        @include border-radius(5px, 0, 0, 5px);
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 16px;
+        color: #343A40;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        column-gap: 4px;
+        @include for-tablet-landscape-down{
+            column-gap: 5px;
+            width: 71px;
+        }
+        .add{
+            color:#00843C;
+            font-size: 15px;
+            @include for-tablet-landscape-down{
+                color: #FF2E63;
+            }
+        }
+        .remove{
+            font-size: 15px;
+        }
+    }
+    .cart-btn{
+        width: 51px;
+        height: 100%;
+        background: #F2FFF8;
+        box-sizing: border-box;
+        @include border-radius(0px, 5px, 5px, 0px);
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 22px;
+        color: #00843C;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @include for-tablet-landscape-down{
+            width: 69px;
+        }
+        &.active{
+            background: #FF2E63;
+            color: $white;
+            &:hover{
+                background: #DB0038;
+            }
+        }
+        &:hover{
+            background: #D0FFE6;
+        }
+    }
+}

@@ -1,0 +1,78 @@
+@mixin transition($what: all, $time: 0.2s, $how: ease-in-out) {
+    -webkit-transition: $what $time $how;
+    -moz-transition:    $what $time $how;
+    -ms-transition:     $what $time $how;
+    -o-transition:      $what $time $how;
+    transition:         $what $time $how;
+}
+@mixin border-radius($top-left:10px, $top-right:null, $bottom-right:null, $bottom-left:null){
+    -webkit-border-radius: $top-left $top-right $bottom-right $bottom-left;
+       -moz-border-radius: $top-left $top-right $bottom-right $bottom-left;
+        -ms-border-radius: $top-left $top-right $bottom-right $bottom-left;
+            border-radius: $top-left $top-right $bottom-right $bottom-left;  
+}
+
+@mixin box-shadow($top, $left, $blur, $color, $inset: false) {
+    @if $inset {
+      -webkit-box-shadow:inset $top $left $blur $color;
+      -moz-box-shadow:inset $top $left $blur $color;
+      box-shadow:inset $top $left $blur $color;
+    } @else {
+      -webkit-box-shadow: $top $left $blur $color;
+      -moz-box-shadow: $top $left $blur $color;
+      box-shadow: $top $left $blur $color;
+    }
+}
+
+@mixin scroll-bar{
+  &::-webkit-scrollbar {
+    width: 5px;
+  }
+  &::-webkit-scrollbar-thumb {
+      background: #979797;
+      @include border-radius(30px);
+      height: 10%;
+  }
+}
+
+@mixin flex{
+  display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+@mixin for-small-desktop {
+  @media (max-width: 1210px) { @content; }
+}
+
+@mixin for-tablet-landscape-down {
+  @media (max-width: 945px) { @content; }
+}
+
+@mixin for-tablet-landscape-down-900 {
+  @media (max-width: 900px) { @content; }
+}
+
+@mixin for-tablet-landscape-down-835 {
+  @media (max-width: 835px) { @content; }
+}
+
+@mixin for-mobile-down {
+  @media (max-width: 600px) { @content; }
+}
+
+@mixin for-lg-down {
+  @media (max-width: 1340px) { @content; }
+}
+@mixin for-dt-down-1100 {
+  @media (max-width: 1340px) { @content; }
+}
+
+@mixin for-dt-down-1160 {
+  @media (max-width: 1160px) { @content; }
+}
+
+@mixin for-dt-down-1000 {
+  @media (max-width: 1000px) { @content; }
+}
+

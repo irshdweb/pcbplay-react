@@ -1,0 +1,83 @@
+.faqs{
+    width: 100%;
+    margin-top: 110px;
+    @include for-mobile-down {
+        padding-left: 16px;
+        padding-right: 16px;
+        margin-top: 40px;
+    }
+    h3{
+        font-weight: 500;
+        font-size: 36px;
+        line-height: 52px;
+        color:$secondaryColor;
+        margin-top:0;
+        margin-bottom: 30px;
+        padding: 0;
+        @include for-mobile-down {
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+    }
+    .css-1elwnq4-MuiPaper-root-MuiAccordion-root{
+        @include box-shadow(0, 0, 0, #fff);
+        &.Mui-expanded{
+            padding-bottom: 3px;
+            box-shadow: 0px 0px 15px rgba(52, 58, 64, 0.2);
+            @include border-radius(8px);
+            @include for-mobile-down {
+                box-shadow: 0px 0px 15px #fff;
+            }
+        }
+        box-shadow: 0px 0px 15px #fff;
+    }
+    .css-o4b71y-MuiAccordionSummary-content.Mui-expanded{
+        margin-bottom: 0;
+    }
+    .css-sh22l5-MuiButtonBase-root-MuiAccordionSummary-root{
+        min-height: 80px;
+        background: #FAFAFA;
+        margin-bottom: 10px;
+        @include border-radius(8px);
+        @include box-shadow(0, 0, 0, #fff);
+        padding-left: 25px;
+        padding-right: 25px;
+        &.Mui-expanded{
+            background: #fff;
+        }
+    }
+    .title{
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 30px;
+        color: #343A40;
+        font-weight: 500;
+        text-transform: lowercase;
+        @include for-mobile-down {
+            font-size: 15px;
+        }
+    }
+    .MuiCollapse-root{
+        padding-left: 10px;
+        padding-right: 10px;
+        .answer{
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 26px;
+            color: rgba(30, 31, 34, 0.74);
+            @include for-mobile-down {
+                font-size: 14px;
+            }
+        }
+    }
+    .MuiAccordionSummary-expandIconWrapper{
+        &.Mui-expanded{
+            .MuiSvgIcon-root{
+                color: $primaryHover;
+            }
+        }
+    }
+    .css-1elwnq4-MuiPaper-root-MuiAccordion-root:before{
+        display: none;
+    }
+}

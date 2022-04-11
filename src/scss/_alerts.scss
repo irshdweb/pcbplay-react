@@ -1,0 +1,17 @@
+.alert-box{
+    width: 329px;
+    height: 68px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include border-radius(8px);
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    -webkit-box-shadow: 0px 4px 10px -1px rgba(0,0,0,0.68); 
+    box-shadow: 0px 4px 10px -1px rgba(0,0,0,0.48);
+    &.success{
+        background: rgba(0, 132, 60, 0.1);
+        color: #00843C;
+    }
+}

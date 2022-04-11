@@ -1,0 +1,107 @@
+.account-wrap{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    .left-menu{
+        width: 250px;
+        height: 1100px;
+        background: #FFFFFF;
+        box-shadow: 0px 0px 15px rgba(52, 58, 64, 0.2);
+        z-index: 1;
+        position: relative;
+        @include border-radius(0, 0, 10px, 0);
+        @include for-dt-down-1000{
+            width: 50px;
+        }
+    }
+    .route-wrap{
+        width: calc(100% - 250px);
+        @include for-dt-down-1000{
+            width: calc(100% - 50px);
+        }
+    }
+}
+
+.menu-left{
+    width: 100%;
+    margin-top: 73px;
+    ul{
+        width: 100%;
+        padding:0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        li{
+            width: calc(100% - 6px);
+            height: 53px;
+            @include for-dt-down-1000{
+                width: 100%;
+            }
+
+            a{
+                width: 100%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                padding-left: 32px;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 19px;
+                color: #343A40;
+                border-left:3px solid #fff;
+                @include border-radius(8px);
+                @include for-dt-down-1000{
+                    padding-left: 0px;
+                    display:block;
+                    @include border-radius(0px);
+                    border-left: none;
+                    justify-content: center;
+                }
+                svg{
+                    width: 23px;
+                    color: #343A40;
+                    margin-right: 27px;
+                    @include for-dt-down-1000{
+                        width: 40px;
+                    }
+                    path{
+                        fill: #343A40;
+                    }
+                    &.stroke{
+                        path{
+                            stroke: #343A40;
+                            fill: none;
+                        }
+                    }
+                }
+                &.active, &:hover{
+                    color: #FF2E63;
+                    border-left: 3px solid #FF2E63;
+                    background: rgba(255, 46, 99, 0.2);
+                    @include for-dt-down-1000{
+                        background:none;
+                        border-left:none;
+                    }
+                    svg{
+                        color: #FF2E63;
+                        path{
+                            fill: #FF2E63;
+                        }
+                        &.stroke{
+                            path{
+                                stroke: #FF2E63;
+                                fill: none;
+                            }
+                        }
+                    }
+                }
+                span{
+                    @include for-dt-down-1000{
+                        display:none;
+                    }
+                }
+            }
+        }
+    }
+}
